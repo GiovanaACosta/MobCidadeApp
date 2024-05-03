@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".InfoCarroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#5CA170"
+            android:text="Voltar"
+            android:onClick="voltarExplorar"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/carroinfo"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tituloTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Táxis e Carros de Aplicativo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/textoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Em São Paulo, os táxis e carros de aplicativo representam uma parte fundamental do sistema de mobilidade urbana, oferecendo uma alternativa conveniente e acessível ao transporte público. Com a crescente demanda por serviços que oferecem flexibilidade e conforto, esses modais se tornaram indispensáveis para residentes e visitantes.
+Os táxis na cidade estão disponíveis 24 horas por dia e podem ser facilmente acessados em pontos estratégicos, como aeroportos, estações ferroviárias, hotéis e centros comerciais. Além disso, muitas cooperativas e empresas de táxi agora oferecem aplicativos próprios, que permitem aos usuários solicitar corridas, escolher rotas e até mesmo realizar o pagamento de maneira digital, tornando a experiência mais prática e segura."
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolher uma corrida"
+            android:backgroundTint="#5CA170"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
